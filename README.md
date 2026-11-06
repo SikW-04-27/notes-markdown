@@ -4,7 +4,9 @@
 
 在 macOS 原生备忘录里输入 Markdown，自动转换为备忘录的原生富文本。使用 Swift 和 AppKit 开发，驻留在菜单栏，无第三方依赖和网络请求。
 
-可按下方步骤[从源码构建](#构建与测试)。如果手头有预览 ZIP，参见[安装说明](INSTALL.zh-CN.md)。
+**[下载 v0.1.0 安装包](https://github.com/SikW-04-27/notes-markdown/releases/download/v0.1.0/Notes-Markdown-0.1.0-arm64-preview.zip)**（Apple 芯片，macOS 13 或以上）。解压后将 App 拖到「应用程序」，然后按[安装说明](INSTALL.zh-CN.md)开启辅助功能。预览包使用 ad hoc 签名，首次打开可能被 macOS 拦截。
+
+[版本与校验文件](https://github.com/SikW-04-27/notes-markdown/releases/tag/v0.1.0) · [从源码构建](#构建与测试)
 
 ## 使用
 

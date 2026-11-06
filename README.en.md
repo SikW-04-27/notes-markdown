@@ -4,7 +4,9 @@
 
 Type Markdown directly in Apple Notes on macOS. Notes Markdown runs in the menu bar and converts supported syntax to rich text as you type. It's built with Swift and AppKit, with zero third-party dependencies. Conversion runs entirely on your Mac.
 
-[Build from source](#build-and-test) or, if you have a preview ZIP, see the [installation guide in Simplified Chinese](INSTALL.zh-CN.md).
+**[Download v0.1.0](https://github.com/SikW-04-27/notes-markdown/releases/download/v0.1.0/Notes-Markdown-0.1.0-arm64-preview.zip)** for Apple silicon Macs running macOS 13 or later. Unzip the download, move the app to Applications, and enable Accessibility access. The preview uses ad hoc signing, so macOS may block it on first launch. See the [installation guide in Simplified Chinese](INSTALL.zh-CN.md).
+
+[Release and checksum](https://github.com/SikW-04-27/notes-markdown/releases/tag/v0.1.0) · [Build from source](#build-and-test)
 
 ## Usage
 
