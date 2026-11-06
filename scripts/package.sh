@@ -23,6 +23,7 @@ mkdir -p "$release_dir"
 ditto "$bundle_dir" "$release_dir/Notes Markdown.app"
 cp "$project_dir/INSTALL.zh-CN.md" "$release_dir/INSTALL.zh-CN.md"
 cp "$project_dir/README.md" "$release_dir/README.md"
+cp "$project_dir/README.en.md" "$release_dir/README.en.md"
 cp "$project_dir/LICENSE" "$release_dir/LICENSE"
 
 archive_path="$project_dir/dist/$release_name.zip"

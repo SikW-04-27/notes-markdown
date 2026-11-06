@@ -1,5 +1,7 @@
 # Notes Markdown
 
+简体中文 · [English](README.en.md)
+
 在 macOS 原生备忘录里输入 Markdown，自动转换为备忘录的原生富文本。使用 Swift 和 AppKit 开发，驻留在菜单栏，无第三方依赖和网络请求。
 
 可按下方步骤[从源码构建](#构建与测试)。如果手头有预览 ZIP，参见[安装说明](INSTALL.zh-CN.md)。
@@ -56,7 +58,7 @@ zsh scripts/build.sh
 
 产物位于 `dist/Notes Markdown.app`。可复制到个人 Applications 文件夹；更新前先从菜单栏退出旧版本，保持安装路径不变。
 
-如需生成 Apple 芯片预览 ZIP 和 SHA-256 校验文件，运行 `zsh scripts/package.sh --skip-build`。省略 `--skip-build` 时会先重新构建。ZIP 包含 App、安装说明、README 和许可证。
+如需生成 Apple 芯片预览 ZIP 和 SHA-256 校验文件，运行 `zsh scripts/package.sh --skip-build`。省略 `--skip-build` 时会先重新构建。ZIP 包含 App、安装说明、中英文 README 和许可证。
 
 应用图标由 `scripts/generate-icon.swift` 使用 AppKit 绘制，构建时生成完整尺寸的 ICNS；可编辑这个源文件调整配色与形状。预览图为 `Resources/AppIcon.png`。
 
