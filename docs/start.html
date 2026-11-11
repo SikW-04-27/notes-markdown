@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notes Markdown 首次打开与安装指南 · First launch and setup</title>
+  <meta name="description" content="Notes Markdown 首次打开遇到 Apple 无法验证时，如何找到 macOS 的仍要打开按钮，以及开启辅助功能和完成第一次转换。">
+  <link rel="canonical" href="https://sikw-04-27.github.io/notes-markdown/start.html">
+  <style>
+    :root { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #232724; background: #fbf9f3; line-height: 1.7; }
+    * { box-sizing: border-box; }
+    body { max-width: 850px; margin: auto; padding: 28px 24px 60px; }
+    a { color: #285b45; text-underline-offset: 4px; }
+    nav { display: flex; justify-content: space-between; gap: 20px; border-bottom: 1px solid #dcded5; padding-bottom: 16px; }
+    h1 { line-height: 1.3; font-size: 32px; margin-top: 32px; }
+    h2 { line-height: 1.4; font-size: 23px; margin-top: 30px; }
+    h3 { font-size: 18px; }
+    li { margin: 10px 0; padding-left: 4px; }
+    code { background: #eeeee5; padding: 2px 5px; border-radius: 4px; }
+    .hint { background: #f7efda; border-left: 4px solid #d9ab36; padding: 16px 20px; }
+    .alert-guide { display: grid; grid-template-columns: 250px 1fr; align-items: start; gap: 28px; margin: 24px 0; }
+    .alert-guide img { width: 100%; height: auto; border-radius: 16px; }
+    .alert-guide ol { padding-left: 22px; margin-top: 0; }
+    .subtle { color: #646963; font-size: 14px; }
+    .language { border-top: 1px solid #dcded5; padding-top: 20px; margin-top: 40px; }
+    @media (max-width: 580px) { .alert-guide { grid-template-columns: 1fr; } .alert-guide img { max-width: 260px; } h1 { font-size: 28px; } }
+    @media print { body { max-width: none; padding: 0; } .language { break-before: page; } }
+  </style>
+</head>
+<body>
+  <nav><strong>Notes Markdown · 安装前先读</strong><a href="#english" lang="en">English ↓</a></nav>
+  <main>
+    <section id="chinese">
+      <h1>先完成 macOS 的首次打开确认</h1>
+      <p>先把 <strong>Notes Markdown.app</strong> 拖到「应用程序」，再双击打开。如果看到下面的弹窗，按这页的步骤操作。</p>
+      <p class="hint">这个提示出现在应用启动之前。完成系统确认后，App 才会显示「开始使用与试写」窗口。当前下载的是使用 ad hoc 签名、尚未经过 Apple 公证的预览版。</p>
+      <h2>看到「Apple 无法验证」时怎么打开？</h2>
+      <div class="alert-guide">
+        <img src="guide-assets/macos-open-alert.png" width="520" height="474" alt="macOS 提示未打开 Notes Markdown.app，显示完成和移到废纸篓两个按钮">
+        <ol>
+          <li>确认 App 来自本项目的 GitHub 发布页，且文件完整。选择弹窗里的 <strong>完成</strong>，保留 App。</li>
+          <li>打开 <strong>系统设置 → 隐私与安全性</strong>。向下滚动到「安全性」区域。</li>
+          <li>找到提到 <strong>Notes Markdown</strong> 被阻止打开的提示，点击旁边的 <strong>仍要打开</strong>。</li>
+          <li>按系统提示认证，并在后续提示里确认 <strong>打开</strong>。应用启动后会出现使用引导。</li>
+        </ol>
+      </div>
+      <p class="subtle">找不到「仍要打开」时，再从「应用程序」双击一次 App，选择「完成」，然后返回隐私与安全性页面。组织管理的 Mac 可能需要管理员允许安装。</p>
+      <p>如果提示包含「将损坏电脑」、已知恶意软件或「已损坏」，请停止打开并核对文件来源及校验值。 <a href="https://support.apple.com/zh-cn/102445">Apple 官方打开说明</a></p>
+      <h2>App 打开后，完成这两步</h2>
+      <ol>
+        <li><strong>开启辅助功能。</strong> 在引导里点击「打开辅助功能设置」，开启 Notes Markdown。列表中没有时，点 + 添加应用程序里的 App。返回引导，等待状态显示「已完成」。</li>
+        <li><strong>完成第一次转换。</strong> 确认「自动转换」开启，点击「打开苹果备忘录」，新建测试笔记。在正文空行逐字输入 <code>**你好**</code>，闭合星号后文字会变成粗体。</li>
+      </ol>
+      <p>关闭引导窗口后，从屏幕顶部菜单栏的 Notes Markdown 图标可以暂停、恢复或重新打开「开始使用与试写」。在备忘录按 ⌘Z 撤销转换，段落格式可能需要撤销两次。</p>
+      <p><a href="https://sikw-04-27.github.io/notes-markdown/">产品首页与完整语法</a> · <a href="https://github.com/SikW-04-27/notes-markdown/releases">安装包与校验文件</a></p>
+    </section>
+    <section id="english" class="language" lang="en">
+      <p><a href="#chinese" lang="zh-CN">返回中文 ↑</a></p>
+      <h1>Complete the macOS first-launch confirmation</h1>
+      <p>Move <strong>Notes Markdown.app</strong> to Applications and open it there. This preview uses ad hoc signing and is awaiting Apple notarization. The setup window appears after macOS allows the app to launch.</p>
+      <h2>If Apple says it cannot verify the app</h2>
+      <ol>
+        <li>Confirm the download came from this project's GitHub release and is intact. Choose <strong>Done</strong> in the alert to keep the app.</li>
+        <li>Open <strong>System Settings → Privacy &amp; Security</strong> and scroll down to Security.</li>
+        <li>Find the message about <strong>Notes Markdown</strong> being blocked and click <strong>Open Anyway</strong>.</li>
+        <li>Authenticate as requested by macOS and confirm <strong>Open</strong>. The app's setup window will appear.</li>
+      </ol>
+      <p>If the button is missing, try opening the app from Applications again, choose Done, and return to Privacy &amp; Security. A managed Mac may require an administrator. For warnings about known malware or damage, stop opening the file and check its source and checksum. <a href="https://support.apple.com/en-us/102445">Apple's opening instructions</a></p>
+      <h2>After the app opens</h2>
+      <ol>
+        <li>Click <strong>打开辅助功能设置</strong> (Open Accessibility Settings) and enable Notes Markdown. Add the app from Applications with + if needed. Return to setup and wait for <strong>已完成</strong> (Completed).</li>
+        <li>Enable <strong>自动转换</strong> (Automatic conversion), click <strong>打开苹果备忘录</strong> (Open Apple Notes), and create a test note. Type <code>**hello**</code> character by character on a blank line in the note body. The word becomes bold.</li>
+      </ol>
+      <p>The menu bar icon lets you pause, resume, or reopen setup. Press ⌘Z in Notes to undo a conversion. Paragraph conversions may need two undo steps.</p>
+      <p><a href="https://sikw-04-27.github.io/notes-markdown/en/">Overview and full syntax</a> · <a href="https://github.com/SikW-04-27/notes-markdown/releases">Downloads and checksums</a></p>
+    </section>
+  </main>
+</body>
+</html>

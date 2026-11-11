@@ -17,9 +17,9 @@
   <meta property="og:image" content="https://sikw-04-27.github.io/notes-markdown/assets/icon.png">
   <meta name="twitter:card" content="summary">
   <link rel="icon" href="../assets/icon.png">
-  <link rel="stylesheet" href="../assets/site.css">
+  <link rel="stylesheet" href="../assets/site.css?v=0.1.2">
   <script src="../assets/site.js" defer></script>
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Notes Markdown", "url": "https://sikw-04-27.github.io/notes-markdown/en/", "operatingSystem": "macOS 13+", "applicationCategory": "ProductivityApplication", "softwareVersion": "0.1.1", "downloadUrl": "https://github.com/SikW-04-27/notes-markdown/releases/download/v0.1.1/Notes-Markdown-0.1.1-arm64-preview.zip", "isAccessibleForFree": true, "license": "https://github.com/SikW-04-27/notes-markdown/blob/main/LICENSE"}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Notes Markdown", "url": "https://sikw-04-27.github.io/notes-markdown/en/", "operatingSystem": "macOS 13+", "applicationCategory": "ProductivityApplication", "softwareVersion": "0.1.2", "downloadUrl": "https://github.com/SikW-04-27/notes-markdown/releases/download/v0.1.2/Notes-Markdown-0.1.2-arm64-preview.zip", "isAccessibleForFree": true, "license": "https://github.com/SikW-04-27/notes-markdown/blob/main/LICENSE"}</script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -36,8 +36,9 @@
           <span class="eyebrow">Apple Notes + Markdown</span>
           <h1>Markdown shortcuts.<br><em>Right inside Apple Notes.</em></h1>
           <p class="lead">Type <code>**bold**</code>, a heading, or a list and turn familiar Markdown into native Notes formatting. Notes Markdown stays in your Mac menu bar while you write.</p>
-          <div class="actions"><a class="button" href="https://github.com/SikW-04-27/notes-markdown/releases/download/v0.1.1/Notes-Markdown-0.1.1-arm64-preview.zip">Download Mac preview ↓</a><a href="#start">First-time setup ↗</a></div>
-          <p class="fine">v0.1.1 · Apple silicon · macOS 13+</p>
+          <div class="actions"><a class="button" href="https://github.com/SikW-04-27/notes-markdown/releases/download/v0.1.2/Notes-Markdown-0.1.2-arm64-preview.zip">Download Mac preview ↓</a><a href="#first-open">App blocked? Start here ↗</a></div>
+          <p class="fine">v0.1.2 · Apple silicon · macOS 13+</p>
+          <p class="launch-banner">If Apple cannot verify the app, <a href="#first-open">follow the Open Anyway steps</a>. The ZIP also includes an offline illustrated guide.</p>
         </div>
         <div class="demo" aria-label="Formatting illustration">
           <div class="window-bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i><small>Apple Notes · Formatting illustration</small></div>
@@ -54,9 +55,24 @@
         </div>
       </div>
       <div class="strip"><span>Free and open source · MIT</span><span>Native Swift / AppKit app</span><span>Text processed on your Mac</span></div>
+      <section id="first-open" class="first-open" aria-labelledby="first-open-title">
+        <h2 id="first-open-title">Apple cannot verify the app? Start here.</h2>
+        <p>This is the macOS first-launch check. Confirm that the app came from this project's GitHub release and is intact, then follow these steps if you trust the download.</p>
+        <div class="first-open-body">
+          <img src="../guide-assets/macos-open-alert.png" width="520" height="474" alt="The macOS first-launch alert in Chinese, with Done on the left and Move to Trash on the right">
+          <ol>
+            <li>Choose <strong>Done</strong> in the alert to keep the app.</li>
+            <li>Open <strong>System Settings → Privacy &amp; Security</strong> and scroll down to Security.</li>
+            <li>Find the message about Notes Markdown being blocked and click <strong>Open Anyway</strong>.</li>
+            <li>Authenticate as requested and confirm <strong>Open</strong>. The app's setup window appears after launch.</li>
+          </ol>
+        </div>
+        <p class="fine">If the button is missing, try opening the app from Applications again, choose Done, and return to Privacy &amp; Security. A managed Mac may require an administrator. For malware or damaged-file alerts, stop opening the app and check its source and checksum.</p>
+        <p><a href="../start.html#english">Full illustrated guide ↗</a> · <a href="https://support.apple.com/en-us/102445">Apple's opening instructions ↗</a></p>
+      </section>
       <section id="start">
         <div class="section-top"><h2>Your first conversion in three steps</h2><a class="fine" href="https://github.com/SikW-04-27/notes-markdown/blob/main/INSTALL.en.md">Full installation guide ↗</a></div>
-        <div class="steps"><article><span class="step-number">01</span><h3>Download and open</h3><p>Unzip the preview and move <strong>Notes Markdown.app</strong> to Applications. Open it there. Setup shows your current permissions and conversion status.</p></article>
+        <div class="steps"><article><span class="step-number">01</span><h3>Download and open</h3><p>Unzip the preview, open <strong>00-先读我-START-HERE.html</strong> for the offline guide, and move <strong>Notes Markdown.app</strong> to Applications. Complete the <a href="#first-open">macOS first-launch confirmation</a> and open the app. Setup shows your current permissions and conversion status.</p></article>
 <article><span class="step-number">02</span><h3>Grant Accessibility access</h3><p>Click <strong>打开辅助功能设置</strong> in setup and enable Notes Markdown. Add the app with + if needed. Return to setup and wait for <strong>已完成</strong> (Completed).</p></article>
 <article><span class="step-number">03</span><h3>Type a test note</h3><p>Click <strong>打开苹果备忘录</strong> (Open Apple Notes). Create a test note and type <code>**hello**</code> character by character on a blank line in the body. The word becomes bold.</p></article></div>
         <aside class="notice"><strong>About the first-launch alert</strong><p>This preview uses ad hoc signing and is awaiting Apple notarization. macOS may block it on first launch. Verify the source and checksum, then follow <a href="https://support.apple.com/en-us/102445">Apple’s opening instructions</a> if you trust the app.</p></aside>
@@ -87,11 +103,11 @@
 <details><summary>Can I use this with Markdown files?</summary><p>The app converts syntax while you type. Notes on macOS 26 also provides a file-import workflow. See <a href="https://support.apple.com/en-us/102223">Apple’s import guide</a> for those steps.</p></details>
 <details><summary>Where can I find the source and license?</summary><p>The Swift source and build scripts are on <a href="https://github.com/SikW-04-27/notes-markdown">GitHub</a>. The MIT license allows use, modification, and redistribution under its terms.</p></details></div>
     </section>
-    <div class="download"><div><h2>Try it with your next note.</h2><p>Follow setup, grant access, and type in a blank test note.</p></div><a class="button" href="https://github.com/SikW-04-27/notes-markdown/releases/download/v0.1.1/Notes-Markdown-0.1.1-arm64-preview.zip">Download Mac preview ↓</a></div>
+    <div class="download"><div><h2>Try it with your next note.</h2><p>Follow setup, grant access, and type in a blank test note.</p></div><a class="button" href="https://github.com/SikW-04-27/notes-markdown/releases/download/v0.1.2/Notes-Markdown-0.1.2-arm64-preview.zip">Download Mac preview ↓</a></div>
   </div>
   </main>
   <div class="wrap">
-    <footer><span>An independent third-party tool · v0.1.1 preview</span><div><a href="https://github.com/SikW-04-27/notes-markdown/releases/tag/v0.1.1">Release and checksum</a><a href="https://github.com/SikW-04-27/notes-markdown/blob/main/INSTALL.en.md">Permissions and data</a><a href="https://github.com/SikW-04-27/notes-markdown/blob/main/LICENSE">MIT license</a></div></footer>
+    <footer><span>An independent third-party tool · v0.1.2 preview</span><div><a href="https://github.com/SikW-04-27/notes-markdown/releases/tag/v0.1.2">Release and checksum</a><a href="https://github.com/SikW-04-27/notes-markdown/blob/main/INSTALL.en.md">Permissions and data</a><a href="https://github.com/SikW-04-27/notes-markdown/blob/main/LICENSE">MIT license</a></div></footer>
   </div>
 </body>
 </html>

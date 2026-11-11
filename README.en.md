@@ -4,13 +4,13 @@
 
 Type Markdown directly in Apple Notes on macOS. Notes Markdown runs in the menu bar and converts supported syntax to rich text as you type. It's built with Swift and AppKit, with zero third-party dependencies. Conversion runs entirely on your Mac.
 
-**[Download v0.1.1](https://github.com/SikW-04-27/notes-markdown/releases/download/v0.1.1/Notes-Markdown-0.1.1-arm64-preview.zip)** for Apple silicon Macs running macOS 13 or later. Unzip the download, move the app to Applications, and enable Accessibility access. The preview uses ad hoc signing, so macOS may block it on first launch. See the [installation guide](INSTALL.en.md).
+**[Download v0.1.2](https://github.com/SikW-04-27/notes-markdown/releases/download/v0.1.2/Notes-Markdown-0.1.2-arm64-preview.zip)** for Apple silicon Macs running macOS 13 or later. Unzip the download, move the app to Applications, and enable Accessibility access. The preview uses ad hoc signing, so macOS may block it on first launch. See the [installation guide](INSTALL.en.md).
 
-[Overview and FAQ](https://sikw-04-27.github.io/notes-markdown/en/) · [Release and checksum](https://github.com/SikW-04-27/notes-markdown/releases/tag/v0.1.1) · [Build from source](#build-and-test)
+[Overview and FAQ](https://sikw-04-27.github.io/notes-markdown/en/) · [First-launch help](https://sikw-04-27.github.io/notes-markdown/en/#first-open) · [Release and checksum](https://github.com/SikW-04-27/notes-markdown/releases/tag/v0.1.2) · [Build from source](#build-and-test)
 
 ## Usage
 
-1. Unzip the download, move the app to Applications, and open it. If macOS blocks the first launch, follow the [installation guide](INSTALL.en.md#if-macos-blocks-the-first-launch).
+1. Unzip the download, open `00-先读我-START-HERE.html` for the offline guide, then move the app to Applications and open it. If macOS blocks the first launch, follow the [installation guide](INSTALL.en.md#if-macos-blocks-the-first-launch).
 2. Grant Accessibility access in setup. Wait for step 1 to show **已完成** (Completed), and enable **自动转换** (Automatic conversion).
 3. Click **打开苹果备忘录** (Open Apple Notes), create a test note, and type `**hello**` character by character on a **blank line in the note body**. The word should become bold.
 4. Use the menu bar icon to pause, resume, or reopen **开始使用与试写** (Setup and practice). If an edit fails, setup keeps the reason visible. See [troubleshooting](INSTALL.en.md#troubleshooting) for more help. The app interface is currently in Simplified Chinese.
@@ -61,7 +61,7 @@ zsh scripts/build.sh
 
 The app is built at `dist/Notes Markdown.app`. You can move it to your Applications folder. When updating, quit the running copy from the menu bar and replace it at the same path.
 
-Run `zsh scripts/package.sh --skip-build` to package the existing build as an Apple silicon preview ZIP with a SHA-256 checksum. Run `zsh scripts/package.sh` to rebuild before packaging. The ZIP includes the app, both READMEs, both installation guides, and the license.
+Run `zsh scripts/package.sh --skip-build` to package the existing build as an Apple silicon preview ZIP with a SHA-256 checksum. Run `zsh scripts/package.sh` to rebuild before packaging. The ZIP includes the app, both READMEs, both installation guides, the offline illustrated guide, and the license.
 
 The preview is ad hoc signed. Gatekeeper may block downloaded copies on first launch. For installation and checksum steps, see the [installation guide](INSTALL.en.md).
 

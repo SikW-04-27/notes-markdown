@@ -101,3 +101,15 @@ footer a { margin-left: 18px; }
   .download { flex-direction: column; align-items: flex-start; padding: 26px; }
 }
 @media (prefers-reduced-motion: reduce) { :root { scroll-behavior: auto; } }
+.launch-banner { margin: 18px 0 0; padding: 12px 15px; background: #f7efda; border-left: 3px solid #d9ab36; color: #635b49; font-size: 13px; }
+.first-open { padding: 38px; margin-top: 38px; border: 1px solid #ddcb8e; border-radius: 12px; background: #fffaf0; }
+.first-open > p { color: var(--muted); font-size: 14px; margin: 15px 0; }
+.first-open-body { display: grid; grid-template-columns: 260px 1fr; gap: 38px; align-items: center; padding: 16px 0; }
+.first-open-body img { width: 100%; height: auto; border-radius: 14px; }
+.first-open-body ol { margin: 0; padding-left: 24px; }
+.first-open-body li { padding-left: 4px; margin: 14px 0; font-size: 15px; }
+@media (max-width: 650px) {
+  .first-open { padding: 24px; }
+  .first-open-body { grid-template-columns: 1fr; gap: 18px; }
+  .first-open-body img { max-width: 260px; }
+}

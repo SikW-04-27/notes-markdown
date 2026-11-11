@@ -6,15 +6,23 @@
 
 ## 1. 下载并放入应用程序
 
-1. 从 [v0.1.1 发布页](https://github.com/SikW-04-27/notes-markdown/releases/tag/v0.1.1) 下载 `Notes-Markdown-0.1.1-arm64-preview.zip`。
-2. 双击 ZIP 解压，把里面的 **Notes Markdown.app** 拖到访达的 **应用程序（Applications）** 文件夹。
-3. 从应用程序文件夹打开 App。首次启动会出现「开始使用与试写」窗口，屏幕顶部也会出现菜单栏图标。
+1. 从 [v0.1.2 发布页](https://github.com/SikW-04-27/notes-markdown/releases/tag/v0.1.2) 下载 `Notes-Markdown-0.1.2-arm64-preview.zip`。
+2. 双击 ZIP 解压，先用浏览器打开 **00-先读我-START-HERE.html**。这份指南可离线查看。
+3. 把 **Notes Markdown.app** 拖到访达的 **应用程序（Applications）** 文件夹。
+4. 从应用程序文件夹打开 App。完成系统的首次打开确认后，会出现「开始使用与试写」窗口，屏幕顶部也会出现菜单栏图标。
 
 ZIP 已包含可运行的 App。GitHub 自动提供的 Source code 文件用于自行构建。
 
 ### 首次打开遇到系统提示
 
-如果提示「无法验证开发者」或「Apple 无法检查此 App」，请先确认下载来源和文件完整性。确认信任后，在尝试打开 App 之后，前往 **系统设置 → 隐私与安全性**，找到此 App 的提示，选择 **仍要打开** 并完成系统确认。 [Apple 官方打开说明](https://support.apple.com/zh-cn/102445)
+如果看到「未打开 Notes Markdown.app」和「Apple 无法验证」弹窗，确认来源和文件完整性后，按下面操作。
+
+1. 在弹窗中选择 **完成**，保留 App。
+2. 打开 **系统设置 → 隐私与安全性**，向下滚动到「安全性」区域。
+3. 找到 Notes Markdown 被阻止打开的提示，点击 **仍要打开**。
+4. 按系统提示认证，再确认 **打开**。此时才会显示 App 内的使用引导。
+
+找不到「仍要打开」时，再从应用程序文件夹双击一次 App，点「完成」，然后回到隐私与安全性页面。 [带图的首次打开指南](https://sikw-04-27.github.io/notes-markdown/start.html) · [Apple 官方说明](https://support.apple.com/zh-cn/102445)
 
 如果提示「将损坏电脑」、已知恶意软件或文件已损坏，请停止打开并核对来源及校验值。组织管理的 Mac 可能需要管理员允许安装。
 
@@ -62,7 +70,7 @@ ZIP 已包含可运行的 App。GitHub 自动提供的 Source code 文件用于�
 将 ZIP 与 `.sha256` 放在同一文件夹，在该文件夹打开终端运行以下命令。输出 `OK` 表示文件与发布的校验值一致。
 
 ```sh
-shasum -a 256 -c Notes-Markdown-0.1.1-arm64-preview.zip.sha256
+shasum -a 256 -c Notes-Markdown-0.1.2-arm64-preview.zip.sha256
 ```
 
 ## 更新与卸载

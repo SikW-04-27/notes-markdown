@@ -17,9 +17,9 @@
   <meta property="og:image" content="https://sikw-04-27.github.io/notes-markdown/assets/icon.png">
   <meta name="twitter:card" content="summary">
   <link rel="icon" href="assets/icon.png">
-  <link rel="stylesheet" href="assets/site.css">
+  <link rel="stylesheet" href="assets/site.css?v=0.1.2">
   <script src="assets/site.js" defer></script>
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Notes Markdown", "url": "https://sikw-04-27.github.io/notes-markdown/", "operatingSystem": "macOS 13+", "applicationCategory": "ProductivityApplication", "softwareVersion": "0.1.1", "downloadUrl": "https://github.com/SikW-04-27/notes-markdown/releases/download/v0.1.1/Notes-Markdown-0.1.1-arm64-preview.zip", "isAccessibleForFree": true, "license": "https://github.com/SikW-04-27/notes-markdown/blob/main/LICENSE"}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Notes Markdown", "url": "https://sikw-04-27.github.io/notes-markdown/", "operatingSystem": "macOS 13+", "applicationCategory": "ProductivityApplication", "softwareVersion": "0.1.2", "downloadUrl": "https://github.com/SikW-04-27/notes-markdown/releases/download/v0.1.2/Notes-Markdown-0.1.2-arm64-preview.zip", "isAccessibleForFree": true, "license": "https://github.com/SikW-04-27/notes-markdown/blob/main/LICENSE"}</script>
 </head>
 <body>
   <a class="skip" href="#main">跳到主要内容</a>
@@ -36,8 +36,9 @@
           <span class="eyebrow">Apple Notes + Markdown</span>
           <h1>在苹果备忘录里，<br><em>顺手写 Markdown。</em></h1>
           <p class="lead">键入 <code>**粗体**</code>、标题或列表，让熟悉的语法直接变成备忘录的原生格式。Notes Markdown 驻留在 Mac 菜单栏，陪你完成日常记录。</p>
-          <div class="actions"><a class="button" href="https://github.com/SikW-04-27/notes-markdown/releases/download/v0.1.1/Notes-Markdown-0.1.1-arm64-preview.zip">下载 Mac 预览版 ↓</a><a href="#start">第一次使用 ↗</a></div>
-          <p class="fine">v0.1.1 · Apple 芯片 · macOS 13 或以上</p>
+          <div class="actions"><a class="button" href="https://github.com/SikW-04-27/notes-markdown/releases/download/v0.1.2/Notes-Markdown-0.1.2-arm64-preview.zip">下载 Mac 预览版 ↓</a><a href="#first-open">打不开？看这里 ↗</a></div>
+          <p class="fine">v0.1.2 · Apple 芯片 · macOS 13 或以上</p>
+          <p class="launch-banner">首次打开遇到「Apple 无法验证」？<a href="#first-open">查看「仍要打开」的操作步骤</a>。ZIP 内也附带可离线打开的图文指南。</p>
         </div>
         <div class="demo" aria-label="转换效果示意">
           <div class="window-bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i><small>Apple Notes · 转换效果示意</small></div>
@@ -54,9 +55,24 @@
         </div>
       </div>
       <div class="strip"><span>免费开源 · MIT</span><span>Swift / AppKit 原生应用</span><span>文本在本机处理</span></div>
+      <section id="first-open" class="first-open" aria-labelledby="first-open-title">
+        <h2 id="first-open-title">看到「Apple 无法验证」？从这里继续</h2>
+        <p>这是 macOS 的首次打开确认。确认安装包来自本项目的 GitHub 发布页，且文件完整后，按以下步骤操作。</p>
+        <div class="first-open-body">
+          <img src="guide-assets/macos-open-alert.png" width="520" height="474" alt="macOS 拦截 Notes Markdown 的弹窗，左侧为完成按钮，右侧为移到废纸篓">
+          <ol>
+            <li>选择弹窗里的 <strong>完成</strong>，保留 App。</li>
+            <li>打开 <strong>系统设置 → 隐私与安全性</strong>，向下滚动到「安全性」。</li>
+            <li>找到 Notes Markdown 被阻止打开的提示，点击 <strong>仍要打开</strong>。</li>
+            <li>按系统提示认证，并确认 <strong>打开</strong>。App 内的使用引导会在启动后出现。</li>
+          </ol>
+        </div>
+        <p class="fine">找不到「仍要打开」时，再从「应用程序」双击 App，点「完成」，然后回到隐私与安全性页面。组织管理的 Mac 可能需要管理员允许安装。遇到已知恶意软件或文件损坏提示时，请停止打开并核对来源和校验值。</p>
+        <p><a href="start.html">打开完整图文指南 ↗</a> · <a href="https://support.apple.com/zh-cn/102445">Apple 官方说明 ↗</a></p>
+      </section>
       <section id="start">
         <div class="section-top"><h2>第一次使用，跟着这三步走</h2><a class="fine" href="https://github.com/SikW-04-27/notes-markdown/blob/main/INSTALL.zh-CN.md">完整安装说明 ↗</a></div>
-        <div class="steps"><article><span class="step-number">01</span><h3>下载并打开</h3><p>解压预览 ZIP，将 <strong>Notes Markdown.app</strong> 拖进「应用程序」，再从那里打开。引导窗口会显示当前权限和转换状态。</p></article>
+        <div class="steps"><article><span class="step-number">01</span><h3>下载并打开</h3><p>解压 ZIP，先打开 <strong>00-先读我-START-HERE.html</strong> 查看安装指南，再将 <strong>Notes Markdown.app</strong> 拖进「应用程序」，再从那里打开。完成 <a href="#first-open">macOS 首次打开确认</a>后，引导窗口会显示当前权限和转换状态。</p></article>
 <article><span class="step-number">02</span><h3>开启辅助功能</h3><p>在引导里点「打开辅助功能设置」，开启 Notes Markdown。列表里没有时，点 + 添加 App。回到引导，等待状态显示「已完成」。</p></article>
 <article><span class="step-number">03</span><h3>亲手试一次</h3><p>点「打开苹果备忘录」，新建测试笔记。在正文空行逐字键入 <code>**你好**</code>。闭合星号后，文字会变成粗体。</p></article></div>
         <aside class="notice"><strong>关于首次打开的系统提示</strong><p>当前是使用 ad hoc 签名的预览版，尚未经过 Apple 公证。macOS 可能拦截首次打开。确认来源和校验值后，可按 <a href="https://support.apple.com/zh-cn/102445">Apple 官方说明</a>决定是否继续。</p></aside>
@@ -87,11 +103,11 @@
 <details><summary>可以用它处理 Markdown 文件吗？</summary><p>这个工具处理正在输入的语法。macOS 26 的备忘录还提供 Markdown 文件导入流程，具体步骤见 <a href="https://support.apple.com/zh-cn/102223">Apple 的导入说明</a>。</p></details>
 <details><summary>源码和许可证在哪里？</summary><p>完整 Swift 源码与构建脚本放在 <a href="https://github.com/SikW-04-27/notes-markdown">GitHub 仓库</a>。项目使用 MIT 许可证，可按许可证条款使用、修改和再分发。</p></details></div>
     </section>
-    <div class="download"><div><h2>从下一条笔记开始试试。</h2><p>下载后按引导完成授权，再在空白笔记里试写。</p></div><a class="button" href="https://github.com/SikW-04-27/notes-markdown/releases/download/v0.1.1/Notes-Markdown-0.1.1-arm64-preview.zip">下载 Mac 预览版 ↓</a></div>
+    <div class="download"><div><h2>从下一条笔记开始试试。</h2><p>下载后按引导完成授权，再在空白笔记里试写。</p></div><a class="button" href="https://github.com/SikW-04-27/notes-markdown/releases/download/v0.1.2/Notes-Markdown-0.1.2-arm64-preview.zip">下载 Mac 预览版 ↓</a></div>
   </div>
   </main>
   <div class="wrap">
-    <footer><span>独立开发的第三方工具 · v0.1.1 预览版</span><div><a href="https://github.com/SikW-04-27/notes-markdown/releases/tag/v0.1.1">发布说明与校验值</a><a href="https://github.com/SikW-04-27/notes-markdown/blob/main/INSTALL.zh-CN.md">权限与数据说明</a><a href="https://github.com/SikW-04-27/notes-markdown/blob/main/LICENSE">MIT 许可证</a></div></footer>
+    <footer><span>独立开发的第三方工具 · v0.1.2 预览版</span><div><a href="https://github.com/SikW-04-27/notes-markdown/releases/tag/v0.1.2">发布说明与校验值</a><a href="https://github.com/SikW-04-27/notes-markdown/blob/main/INSTALL.zh-CN.md">权限与数据说明</a><a href="https://github.com/SikW-04-27/notes-markdown/blob/main/LICENSE">MIT 许可证</a></div></footer>
   </div>
 </body>
 </html>

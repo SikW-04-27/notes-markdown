@@ -6,15 +6,23 @@ For Apple silicon Macs with macOS 13 or later. Live typing has been verified on 
 
 ## 1. Download and install
 
-1. Download `Notes-Markdown-0.1.1-arm64-preview.zip` from the [v0.1.1 release](https://github.com/SikW-04-27/notes-markdown/releases/tag/v0.1.1).
-2. Double-click the ZIP and move **Notes Markdown.app** to **Applications** in Finder.
-3. Open the app from Applications. A setup window opens and a Notes Markdown icon appears in the menu bar.
+1. Download `Notes-Markdown-0.1.2-arm64-preview.zip` from the [v0.1.2 release](https://github.com/SikW-04-27/notes-markdown/releases/tag/v0.1.2).
+2. Unzip the download and open **00-先读我-START-HERE.html** in a browser for the offline guide.
+3. Move **Notes Markdown.app** to **Applications** in Finder.
+4. Open the app from Applications. After the macOS first-launch confirmation, a setup window opens and a Notes Markdown icon appears in the menu bar.
 
 The ZIP contains the ready-to-run app. GitHub's Source code downloads are for building the app yourself. The app interface is currently in Simplified Chinese. The labels below match the interface.
 
 ### If macOS blocks the first launch
 
-If macOS says the developer cannot be verified or Apple cannot check the app, verify its source and integrity first. If you trust the download, try opening it, then go to **System Settings → Privacy & Security**, locate the app's alert, and choose **Open Anyway**. [Apple's opening instructions](https://support.apple.com/en-us/102445)
+If macOS says the developer cannot be verified or Apple cannot check the app, verify its source and integrity first. If you trust the download, follow these steps.
+
+1. Choose **Done** in the alert to keep the app.
+2. Open **System Settings → Privacy & Security** and scroll down to Security.
+3. Find the message about Notes Markdown being blocked and click **Open Anyway**.
+4. Authenticate as requested and confirm **Open**. The app's setup window will appear.
+
+If the button is missing, try opening the app from Applications again, choose Done, and return to Privacy & Security. [Illustrated first-launch guide](https://sikw-04-27.github.io/notes-markdown/start.html#english) · [Apple's opening instructions](https://support.apple.com/en-us/102445)
 
 If macOS reports known malware, damage, or that the app will damage your computer, stop opening it and check the source and checksum. A managed Mac may require an administrator's approval.
 
@@ -62,7 +70,7 @@ You can also practice in the setup window's editor. This editor works without Ac
 Put the ZIP and `.sha256` file in the same folder and run this command there. An `OK` result confirms that the archive matches the published checksum.
 
 ```sh
-shasum -a 256 -c Notes-Markdown-0.1.1-arm64-preview.zip.sha256
+shasum -a 256 -c Notes-Markdown-0.1.2-arm64-preview.zip.sha256
 ```
 
 ## Update or uninstall
