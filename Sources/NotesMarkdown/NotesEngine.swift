@@ -5,11 +5,15 @@ import os
 
 final class NotesEngine: ObservableObject {
     @Published var enabled = UserDefaults.standard.object(forKey: "automaticConversionEnabled") as? Bool ?? true {
-        didSet { UserDefaults.standard.set(enabled, forKey: "automaticConversionEnabled") }
+        didSet {
+            UserDefaults.standard.set(enabled, forKey: "automaticConversionEnabled")
+            if enabled { lastError = nil }
+        }
     }
     @Published private(set) var trusted = false
     @Published private(set) var status = "等待辅助功能权限"
     @Published private(set) var conversionCount = 0
+    @Published private(set) var lastError: String?
     private let rule = MarkdownRule()
     private var timer: Timer?
     private var baseline: EditorSnapshot?
@@ -110,6 +114,7 @@ final class NotesEngine: ObservableObject {
                     self.logger.notice("Converted a Markdown span; length=\(conversion.range.length, privacy: .public)")
                 }
             case .failure(let error):
+                self.lastError = error.localizedDescription
                 self.enabled = false
                 self.status = error.localizedDescription
             }

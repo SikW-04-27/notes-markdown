@@ -70,7 +70,7 @@ struct Playground: NSViewRepresentable {
             text.setSelectedRange(NSRange(location: caret, length: 0))
             text.typingAttributes = base
             if case .paragraph(_, let style) = conversion {
-                let paragraphRange = (text.string as NSString).paragraphRange(for: NSRange(location: max(0, caret - 1), length: 0))
+                let paragraphRange = (text.string as NSString).paragraphRange(for: NSRange(location: caret, length: 0))
                 text.textStorage?.addAttributes(StyledText.demoParagraph(style), range: paragraphRange)
                 text.typingAttributes = StyledText.demoParagraph(style)
             }

@@ -24,12 +24,14 @@ public enum StyledText {
     }
 
     public static func demoParagraph(_ style: ParagraphStyle) -> [NSAttributedString.Key: Any] {
+        let font: NSFont
         switch style {
-        case .title: return [.font: NSFont.systemFont(ofSize: 28, weight: .bold)]
-        case .heading: return [.font: NSFont.systemFont(ofSize: 22, weight: .bold)]
-        case .subheading: return [.font: NSFont.systemFont(ofSize: 18, weight: .semibold)]
-        case .monospaced: return [.font: NSFont.monospacedSystemFont(ofSize: 15, weight: .regular)]
-        default: return [.font: NSFont.systemFont(ofSize: 16)]
+        case .title: font = NSFont.systemFont(ofSize: 28, weight: .bold)
+        case .heading: font = NSFont.systemFont(ofSize: 22, weight: .bold)
+        case .subheading: font = NSFont.systemFont(ofSize: 18, weight: .semibold)
+        case .monospaced: font = NSFont.monospacedSystemFont(ofSize: 15, weight: .regular)
+        default: font = NSFont.systemFont(ofSize: 16)
         }
+        return [.font: font, .foregroundColor: NSColor.textColor]
     }
 }

@@ -1,19 +1,19 @@
-# Notes Markdown
+# Notes Markdown · 苹果备忘录 Markdown 输入助手
 
 简体中文 · [English](README.en.md)
 
 在 macOS 原生备忘录里输入 Markdown，自动转换为备忘录的原生富文本。使用 Swift 和 AppKit 开发，驻留在菜单栏，无第三方依赖和网络请求。
 
-**[下载 v0.1.0 安装包](https://github.com/SikW-04-27/notes-markdown/releases/download/v0.1.0/Notes-Markdown-0.1.0-arm64-preview.zip)**（Apple 芯片，macOS 13 或以上）。解压后将 App 拖到「应用程序」，然后按[安装说明](INSTALL.zh-CN.md)开启辅助功能。预览包使用 ad hoc 签名，首次打开可能被 macOS 拦截。
+**[下载 v0.1.1 安装包](https://github.com/SikW-04-27/notes-markdown/releases/download/v0.1.1/Notes-Markdown-0.1.1-arm64-preview.zip)**（Apple 芯片，macOS 13 或以上）。解压后将 App 拖到「应用程序」，然后按[安装说明](INSTALL.zh-CN.md)开启辅助功能。预览包使用 ad hoc 签名，首次打开可能被 macOS 拦截。
 
-[版本与校验文件](https://github.com/SikW-04-27/notes-markdown/releases/tag/v0.1.0) · [从源码构建](#构建与测试)
+[产品介绍与常见问题](https://sikw-04-27.github.io/notes-markdown/) · [版本与校验文件](https://github.com/SikW-04-27/notes-markdown/releases/tag/v0.1.1) · [从源码构建](#构建与测试)
 
 ## 使用
 
-1. 打开构建或安装好的 `Notes Markdown.app`。
-2. 首次使用，在「系统设置 → 隐私与安全性 → 辅助功能」开启 Notes Markdown。
-3. 切换到备忘录，将光标放在正文，输入下面的语法。
-4. 菜单栏「Notes Markdown」图标可暂停、恢复或退出助手。关闭说明窗口后仍会运行。
+1. 解压安装包，把 App 拖到「应用程序」并打开。首次打开被系统拦截时，按[安装说明](INSTALL.zh-CN.md#首次打开遇到系统提示)处理。
+2. 按引导开启辅助功能，等第 1 步显示「已完成」，确认「自动转换」开关已开启。
+3. 点击「打开苹果备忘录」，新建测试笔记，在**正文空行逐字键入** `**你好**`。闭合星号后文字应变成粗体。
+4. 从菜单栏图标暂停、恢复或打开「开始使用与试写」。转换出错时，引导窗口会保留原因。更多排查步骤见[常见问题](INSTALL.zh-CN.md#常见问题)。
 
 | 输入 | 触发时机 | 原生备忘录中的结果 |
 | --- | --- | --- |
@@ -60,7 +60,7 @@ zsh scripts/build.sh
 
 产物位于 `dist/Notes Markdown.app`。可复制到个人 Applications 文件夹；更新前先从菜单栏退出旧版本，保持安装路径不变。
 
-如需生成 Apple 芯片预览 ZIP 和 SHA-256 校验文件，运行 `zsh scripts/package.sh --skip-build`。省略 `--skip-build` 时会先重新构建。ZIP 包含 App、安装说明、中英文 README 和许可证。
+如需生成 Apple 芯片预览 ZIP 和 SHA-256 校验文件，运行 `zsh scripts/package.sh --skip-build`。省略 `--skip-build` 时会先重新构建。ZIP 包含 App、中英文安装说明、README 和许可证。
 
 应用图标由 `scripts/generate-icon.swift` 使用 AppKit 绘制，构建时生成完整尺寸的 ICNS；可编辑这个源文件调整配色与形状。预览图为 `Resources/AppIcon.png`。
 
